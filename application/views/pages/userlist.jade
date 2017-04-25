@@ -1,0 +1,17 @@
+extends ../layout
+
+block content
+  .container
+    .row
+      table.table.table-hover.table-bordered
+        thead
+          tr
+            th name
+            th priority
+            
+        tbody
+          each user in users
+            tr(class="item-id-#{user._id}")
+                td #{user.name}
+                td #{user.role}
+                

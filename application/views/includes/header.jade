@@ -1,0 +1,13 @@
+.header
+  .header__logo
+    a.header__link--logo(href="/")
+      img(src="img/1.jpeg")
+    form.search-form(target="_blank",action="/search",accept-charset="UTF-8",method="get")
+      input(name="utf8",type="hidden",value="✓")
+      input.search-input(type="text",name="q",id="q",value="",placeholder="搜索")
+      a.search-btn(href="javascript:void(null)")
+        img.search-icon(src="img/search-icon.png")
+  nav.header__nav(role="navigation")
+    a.header__link(href="/archive") Archive
+    a.header__link(href="/") About
+    a.header__link(href="/") Connect
